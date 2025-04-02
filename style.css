@@ -1,4 +1,7 @@
 body {
+    width:100%;
+    overflow-x:hidden;
+    padding: 0px;
     margin: 0px;
     font-family: roboto, 'Times New Roman';
     display:flex;
@@ -63,13 +66,15 @@ a {
 }
 
 .ph1 {
+    height: 40px;
     margin: 0px;
     font-size: 48px;
     font-weight: bolder;
 }
 
 .ph2 {
-    font-size: 18px;
+    height: 40px;
+    font-size: 20px;
 }
 
 .b1 {
@@ -140,4 +145,32 @@ a {
     height: 150px;
     border-radius: 10px;
     outline:2px solid #183081;
+}
+
+.sec3 {
+    padding: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: #e5e7eb;
+}
+
+.sec3block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec3 .testimonial {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+    color: 1F2937;
+    align-self: flex-start;
+
+}
+
+.sec3 .author {
+    font-size: 18px;
+    font-weight: bold;
+    align-self: flex-end;
 }
