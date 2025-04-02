@@ -37,7 +37,7 @@ a {
 .menu li {
     font-size: 18px;
     font-weight: 500;
-    padding: 8px;
+    padding: 10px;
 }
 
 .intro {
@@ -49,6 +49,7 @@ a {
     color: #e5e7eb;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .introinfo {
