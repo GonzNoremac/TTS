@@ -1,6 +1,5 @@
 body {
     width:100%;
-    overflow-x:hidden;
     padding: 0px;
     margin: 0px;
     font-family: roboto, 'Times New Roman';
@@ -57,27 +56,40 @@ a {
 
 .introinfo {
     width: 200px;
-    height: 350px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 2 0 auto;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
 .ph1 {
-    height: 40px;
+    height: auto;
     margin: 0px;
     font-size: 48px;
     font-weight: bolder;
+    flex: 0 1 auto;
 }
 
 .ph2 {
-    height: 40px;
+    flex: 0 1 auto;
+    height: auto;
     font-size: 20px;
 }
 
+.bcontainer1 {
+    width: auto;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .b1 {
+    flex: 0 1 50px;
     font-size: 18px;
     font-weight: 600;
     background-color: #183081;
@@ -89,14 +101,15 @@ a {
 }
 
 .introph {
+    flex: 1 2 auto;
     width: 50px;
-    height: 350px;
+    height: auto;
 }
 
 .introimg {
     width: 400px;
     height: auto;
-    flex: 1 0 auto;
+    flex: 2 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +157,14 @@ a {
     width: 150px;
     height: 150px;
     border-radius: 10px;
-    outline:2px solid #183081;
+    outline:4px solid #183081;
+    overflow: hidden;
+}
+
+.info .img img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .sec3 {
@@ -173,4 +193,70 @@ a {
     font-size: 18px;
     font-weight: bold;
     align-self: flex-end;
+}
+
+.sec4 {
+    background-color: white;
+    padding: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec4block {
+    background-color: #183081;
+    color: white;
+    border-radius: 7px;
+    padding: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ctai {
+    margin: 0;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 75%;
+}
+
+.ctah {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    flex-grow: 0;
+}
+
+.ctap {
+    margin: 10px;
+    flex-grow: 0;
+}
+
+.ctab {
+    height: 50px;
+    align-self: center;
+    background: none;
+    border: white solid 2px;
+    border-radius: 5px;
+    color: white;
+    flex: 0 0 15%;
+}
+
+.footer {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.footer p {
+    color: white;
+    font-size: 14px;
 }
